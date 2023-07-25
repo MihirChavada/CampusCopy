@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto Slab', serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.background {
+    background: radial-gradient(ellipse at center, rgba(225,254,234,1) 0%,  rgba(225,254,234,1) 35%, #B7E8EB 100%);
+  }
+
+ul li a{
+    color: white;
+}
+
+img.dashboard {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.dashboard {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.underline{
+    border-bottom: 3px solid black;
+    width: 100%;
+    animation-name: underline;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes underline {
+    
+    from{
+        width: 0%;
+    }
+    to{
+        width:100%;
+    }
+}
+.custom-img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    transition: all 0.3s ease;
+}
+
+/* extra */
+.custom-1{
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.custom-2{
+
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, rgb(24,47,51) 0%, rgb(0,224,190)  51%, rgb(24,47,51)  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+  
+.custom-dashboard{
+    background-color: rgb(24,47,51);
+    margin: 1rem 0rem;
+    border-radius: 50%;
+}
+.icon-color {
+    color:rgb(0,223,192);
+  }
+
+li a:hover{
+    background-color: rgb(0,223,192);
+    color: black;
+    border-radius: 15px;
+    transition: 1s;
+}
+.fancy-border-radius {
+  border-radius: 37% 63% 47% 53% / 83% 50% 50% 17%;
+
+  /* These are ADDITIONAL styles - add them if you want an object exactly like in the demo above */
+  width: 95%;
+  height: 100%;
+  margin: 45px -90px 0px 0px;
+  background: rgb(0,223,192);
+  background: -webkit-linear-gradient(to right,
+      rgb(21,47,51),
+      rgb(0,223,192));
+  background: linear-gradient(to right,
+      rgb(21,47,51),
+      rgb(0,223,192));
+}
+/* .login_background{
+        background: radial-gradient(ellipse at center, rgba(225,255,255,1) 0%,  rgba(225,255,255,1) 35%, #d5ebec 100%);
+    
+} */
+tr{
+    color: white;
+}
+tbody:nth-child(2n + 1){
+    background: rgb(0,165,255);
+}
+
+tbody:nth-child(2n){
+    background: rgb(19,64,64);
+}
